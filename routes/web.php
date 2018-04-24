@@ -10,9 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['prefix' => 'pessoas'], function() {
+	Route::get('/', 'PessoasController@index');
+});
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('template.app');
 });
 
 Route::group(['prefix' => 'pessoas'], function() {
