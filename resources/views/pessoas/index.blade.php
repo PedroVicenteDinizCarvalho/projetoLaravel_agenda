@@ -7,10 +7,11 @@
    				<div class="card">
       				<div class="card-body">
         				<h5 class="card-title">{{ $pessoa->nome }}</h5>
+        				<p><strong>Contato:</strong>
         				@foreach($pessoa->telefones as $telefone)
-        				<p class="card-text"><strong>Contato:</strong> ({{$telefone->ddd}})-{{$telefone->telefone}}</p>
-        				<a href="#" class="btn btn-primary">Go somewhere</a>
+        				</p><p class="card-text">({{$telefone->ddd}})-{{$telefone->telefone}}</p>
         				@endforeach
+        				<a href="#" class="btn btn-primary">Go somewhere</a>
       				</div>
     			</div>
  			</div>
