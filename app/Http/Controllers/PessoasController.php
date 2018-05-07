@@ -40,4 +40,10 @@ class PessoasController extends Controller
         }
    	    return redirect('/pessoas')->with('message', "Pessoa Criada com Sucesso");
     }
+
+    public function editarView($id)
+    {
+        var_dump($id);
+    }
+
 }
